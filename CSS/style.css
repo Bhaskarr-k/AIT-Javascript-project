@@ -1,14 +1,4 @@
-@media screen and (max-width: 768px) {
-    .sidenav {
-        width: 100%;  /* Full width on small screens */
-    }
-}
 
-@media screen and (min-width: 769px) {
-    .sidenav {
-        width: 0; /* Default hidden */
-    }
-}
 
 
 /* header */
@@ -19,10 +9,16 @@
     top: 0%;
     width: 100%;
     padding-top: 50px;
+   
+
 
 }
+.main-heading{
+    margin-left: 50px;
+    color: white;
+}
 
-#mealMenu {
+.mealMenu{
     /* height: 15px; */
     width: 0;  /* Hidden by default */
     position: fixed;
@@ -30,18 +26,21 @@
     right: 0;  /* Moves to the right */
     background-color:lightpink;
     overflow-x: hidden;
-    /* transition: 0.3s; */
+    transition: 0.3s;
     padding-top: 60px;
-}
-
- /* Menu Items */
-#mealMenu{
     padding: 12px 25px;
     text-decoration: none;
     font-size: 20px;
     color: white;
-    display: block;
-    /* transition: 0.2s; */
+   
+   
+}
+
+ /* Menu Items */
+.mealMenu a{
+    text-decoration: none;
+    margin-right: 0px;
+    
 }
 
 #mealMenua:hover {
@@ -51,7 +50,43 @@
 
 /* menu picture */
 
-.main-picture{
+@media (max-width: 1024px) {
+    .menu-picture-div{
+        font-size: 18px;
+    }
+}
+
+/* For Mobile Phones */
+@media (max-width: 768px) {
+    .menu-picture-div {
+        font-size: 16px;
+        flex-direction: column;
+    }
+}
+
+
+
+.menu-picture-div{
+    background: url('../images/main\ page\ picture.jpg');
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 400px;
 }
+@media (max-width: 1024px) {
+    .menu search{
+        width: 10px;
+    }
+}
+.menu-search{
+    margin-left: 550px;
+    text-align: center;
+    margin-top: 100px;
+    width: 350px;
+    height: 50px;
+    border-radius: 35px;
+    position: fixed;
+
+    
+} 
