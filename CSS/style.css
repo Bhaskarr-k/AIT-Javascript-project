@@ -30,3 +30,31 @@
 .search-icon{
     color: white;
 }
+
+
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+div > div {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 250px;
+}
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+#categories{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 30px;
+
+
+}
+.menu-categories{
+    margin-top: 40px;
+}
