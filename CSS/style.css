@@ -8,9 +8,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    row-gap: 15px;
+   
+    
    
   
 
+}
+.image-content{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .search-menu{
     width: 350px;
@@ -18,6 +29,7 @@
     border-radius: 30px;
     text-align: center;
     border: none;
+
 }
 .search-button{
     width: 50px;
@@ -26,6 +38,7 @@
     margin-left: 20px;
     background-color: orange;
     border: 2px solid white;
+
 }
 .search-icon{
     color: white;
@@ -33,28 +46,4 @@
 
 
 
-div {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-div > div {
-    border: 1px solid #ddd;
-    padding: 10px;
-    width: 250px;
-}
-img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-#categories{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    margin-top: 30px;
 
-
-}
-.menu-categories{
-    margin-top: 40px;
-}

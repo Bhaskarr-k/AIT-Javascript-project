@@ -1,17 +1,37 @@
-async function fetchCategories() {
-    const response = await fetch('https://www.themealdb.com/api/json/v1/1/categories.php');
-    const data = await response.json();
-    const categoriesDiv = document.getElementById('categories');
+async function fetchData() {
+    try {
 
-    data.categories.forEach(category => {
-        const categoryElement = document.createElement('div');
-        categoryElement.innerHTML = `
-            <h2>${category.strCategory}</h2>
-            <img src="${category.strCategoryThumb}" alt="${category.strCategory}" width="200">
-            
-        `;
-        categoriesDiv.appendChild(categoryElement);
-    });
+    
+        showLoading(true);
+        const mealfinder = await fetch("ttps://www.themealdb.com/api.php");
+        const meal = await mealfinder.json()
+
+        displaymeal(meal);
+
+    }catch{
+        console.error("error fetching data:", error);
+
+    }
+    finally{
+        showLoading(false);
+
+    }
+
+
+} 
+function displaymeal(meal) {
+    const  mealcontainer = document.getElementById("categories");
+    mealcontainer.innerHTML = 
+
+
+    meal.forEach(meals => {
+
+        const mealselement = document.createElement("div");
+        mealselement.classList.add("meals");
+
+        const mealsName = document.createElement("h2")
+        mealsName.textContent = meals.name;
+
+
+    })
 }
-
-fetchCategories();
