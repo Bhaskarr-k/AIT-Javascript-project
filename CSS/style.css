@@ -51,4 +51,58 @@
 
 
 
-   
+.underline {
+    width: 100px;
+    height: 5px;
+    background-color: orangered;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.cat-heading {
+    margin: 20px;
+}
+
+.cats-main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+
+}
+
+.catdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+
+}
+
+.cat-img {
+    width: 80%;
+    height: 80%;
+    transition-duration: 0.2s;
+}
+
+.cat-img:hover {
+    transform: scale(1.2);
+}
+
+.cats-title {
+    position: relative;
+    left: 40px;
+    background-color: orange;
+    color: white;
+    font-family: arial;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 2px;
+}
