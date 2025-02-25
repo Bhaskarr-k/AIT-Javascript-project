@@ -146,3 +146,167 @@
 .meal-cat-name{
     margin-left: 20px;
 }
+
+
+/* footer */
+
+
+.foot-h3 {
+    color: white;
+    font-family: arial;
+
+}
+
+.foot-rights {
+    color: black;
+    font-size: 12px;
+
+}
+
+
+
+/* mobile screen */
+
+
+@media screen and (max-width:769px) {
+    .menu-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        background-image: url('../images/istockphoto-1457433817-612x612.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .search-menu {
+        height: 30px;
+        width: 200px;
+        border-radius: 12px;
+        border: none;
+        text-align: center;
+        align-content: center;
+    }
+
+    .search-button {
+        width: 30px;
+        height: 30px;
+        border-radius: 23px;
+        border: 2px solid white;
+        background-color: darkgoldenrod;
+        margin-left: 10px;
+    }
+
+    .search-icon {
+        color: white;
+    }
+
+    .image-content-favourite {
+        color: white;
+        font-family: arial;
+
+    }
+
+    .fav-quote {
+        font-size: 18px;
+
+    }
+
+    .pers-quote {
+        font-size: 12px;
+    }
+
+    .image-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* categories */
+
+    .underline {
+        width: 100px;
+        height: 5px;
+        background-color: orangered;
+        border-radius: 10px;
+        margin: 20px;
+    }
+    
+    .cat-heading {
+        margin: 20px;
+    }
+    
+    .cats-main-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        flex-wrap: wrap;
+        margin-top: 100px;
+    
+    }
+    
+    .catdiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        width: 100px;
+        height: 100px;
+        border-radius: 4px;
+        box-shadow: 3px 3px 3px skyblue;
+    
+    }
+    
+    .cat-img {
+        width: 80%;
+        height: 80%;
+        transition-duration: 0.2s;
+    }
+    
+    .cat-img:hover {
+        transform: scale(1.2);
+    }
+    
+    .cats-title {
+        position: relative;
+        left: 40px;
+        background-color: orange;
+        color: white;
+        font-family: arial;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 5px;
+        border-radius: 2px;
+    }
+    
+
+   /* footer */
+
+   .foot-main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 50px;
+    background-color: orangered;
+    margin-top: 40px;
+
+}
+
+.foot-h3 {
+    color: white;
+    font-family: arial;
+    font-size: 12px;
+
+}
+
+.foot-rights {
+    color: black;
+    font-size: 6px;
+
+}
+}
