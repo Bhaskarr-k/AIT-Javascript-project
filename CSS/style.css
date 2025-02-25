@@ -50,7 +50,6 @@
 /* categories  items*/
 
 
-
 .underline {
     width: 100px;
     height: 5px;
@@ -82,7 +81,7 @@
     width: 200px;
     height: 200px;
     border-radius: 4px;
-
+    box-shadow: 1px 1px 4px lightgrey;
 }
 
 .cat-img {
@@ -105,4 +104,45 @@
     font-weight: bold;
     padding: 5px;
     border-radius: 2px;
+}
+
+
+
+/* meals */
+
+
+.meals-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 50px;
+}
+.mealCard-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px lightblue;
+}
+.mealCard-img{
+    width: 100%;
+    height: 80%;
+}
+.mealTitle{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: arial;
+    color: white;
+    padding: 2px;
+    background-color: brown;
+    border-radius: 2px;
+    text-align: center;
+}
+.meal-cat-name{
+    margin-left: 20px;
 }
